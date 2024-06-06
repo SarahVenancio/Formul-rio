@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+:root{
+    --cordefundocaixa: #e1dcef;
+    --cor2: #9C9FF0;
+    --corletra: #010101;
+    --cor4-laranjaclaro: #e9b03e;
+    --cor5-branco: #e3e3e3;
+    --cor6-azul-cinza: #394e73;
+    --cor7-branco2: #f1f1f1;
+}
+
+@font-face {
+    font-family: "font";
+    src: url(font.otf);
+}
+
+body{
+    background-color: #9C9FF0;
+    background-image: url(fundo.png);
+    background-size: cover; 
+}
+
+header{
+    background-color:var(--cordefundocaixa);
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header h1{
+    font-family: "font", serif;
+    font-size: 5em;
+}
+
+header #logo{
+    width: 160px;
+    height: 160px;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+header #logo img{
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#caixalogin{
+    margin-left: 33em;
+}
+
+#caixalogin form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    shape-outside: #394e73 2px;
+    border-radius: 2em;
+    background-color: var(--cordefundocaixa);
+    margin-top: 3em;
+    width: 15em;
+    font-size: 1.5em;
+    margin-left: 2em;
+}
+
+#caixalogin h2{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#caixalogin p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    margin-left: 5.5em;
+}
