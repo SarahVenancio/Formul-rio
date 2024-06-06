@@ -11,31 +11,25 @@
         <figure id="logo">
             <img src="logo.png"/>
         </figure>
-    
-        <h1>Violet</h1>
+        <div id="titulo">
+            <h1>Violet</h1>
+            <p>Velas Aromáticas</p>
+        </div>
     </header>
     <main>
-        <div id="caixalogin">
+        <div id="caixalogin2">
             <form action="">
                 <h2>CADASTRO</h2>
-        
-                    <label for="usuario">Crie um nome de usuário</label>
-                    <input type="text" name="usuario" id="usuario"><br><br>
-                    <label for="email">Digite seu E-mail</label>
-                    <input type="email" name="email" id="email" d><br><br>
-                    <label for="senha">Crie uma senha</label>
-                    <input type="password" name="senha" id="senha"><br><br>
-                    <label for="dtnasc">Digite sua data de nascimento</label>
+                    
+                    <input type="text" name="usuario" id="usuario" placeholder="Crie um nome de usuário"><br><br>
+                    
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail"><br><br>
+                    
+                    <input type="password" name="senha" id="senha" maxlength="20" rows="1" placeholder="Crie uma senha de 8 digitos, no minímo"><br><br>
+                    <label for="dtnasc">Data de nascimento</label>
                     <input type="date" name="dtnasc" id="dtnasc" ><br><br>
-                    <label for="genero">Gênero</label>
-                    <input type="radio" value="M" name="genero" id="genero" >Masculino 
-                    <input type="radio" value="F" name="genero" id="genero">Feminino 
-                    <input type="radio" value="O" name="genero" id="genero">Outro <br><br>
-                    <label for="pref">Preferências de aroma</label>
-                    <input type="checkbox" name="pref1" id="pref1" value="1">Flores
-                    <input type="checkbox" name="pref2" id="pref2" value="2">Comidas
-                    <input type="checkbox" name="pref3" id="pref3" value="3">Abstratos <br><br>
-
+                   
+                    <textarea id="textarea" name="textarea" maxlength="8" rows="1" placeholder="Digite seu CEP"></textarea><br><br>
                     <label for="regiao">Região</label>
                     <select name="regiao" id="regiao"><br>
                         <option value="S">Sul</option>
@@ -44,13 +38,16 @@
                         <option value="NO">Nordeste</option>
                         <option value="N">Norte</option>
                     </select><br><br>
+                    <label for="genero">Gênero</label>
+                        <input type="radio" value="M" name="genero" id="genero" >Masculino 
+                        <input type="radio" value="F" name="genero" id="genero">Feminino 
+                        <input type="radio" value="O" name="genero" id="genero">Outro <br><br>
+                        
+                        <textarea id="textarea" name="textarea" maxlength="1000" rows="5" placeholder="Escreva aqui suas preferências de aroma"></textarea><br><br>
+                        <button type="submit"> Fazer Cadastro </button><br><br><br>
 
-                    <label for="cep">Digite seu CEP</label>
-                    <textarea name="cep" id="cep" cols="50" rows="1"></textarea><br><br>
-
-                    <input type="submit" value="Acessar">
-            </form>
-            <p>Ainda não tem cadastro? <a href="index.html">Fazer login</a></p>
+                        <p>Já possui cadastro? <a href="index.html">Faça o login</a></p>
+                </form>
         </div>
         
     </main>

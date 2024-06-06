@@ -10,10 +10,7 @@
     --cordefundocaixa: #e1dcef;
     --cor2: #9C9FF0;
     --corletra: #010101;
-    --cor4-laranjaclaro: #e9b03e;
-    --cor5-branco: #e3e3e3;
-    --cor6-azul-cinza: #394e73;
-    --cor7-branco2: #f1f1f1;
+    --corborda: #a76cc4;
 }
 
 @font-face {
@@ -22,18 +19,19 @@
 }
 
 body{
-    background-color: #9C9FF0;
-    background-image: url(fundo.png);
-    background-size: cover; 
+    background-color: var(--cordefundo);
+    background-image: url(fundo.png); 
+    background-size: cover;
 }
 
 header{
     background-color:var(--cordefundocaixa);
-    height: 10em;
+    height: 12em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    text-align: center;
 }
 
 header h1{
@@ -41,11 +39,27 @@ header h1{
     font-size: 5em;
 }
 
+header p{
+    font-family: "font", serif;
+    font-size: 1.7em;
+}
+
 header #logo{
     width: 160px;
     height: 160px;
     margin-right: 1%;
     margin-top: 2%;
+}
+
+header #titulo{
+    margin-top: 0.5%;
+    width: 15%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 header #logo img{
@@ -62,18 +76,22 @@ header #logo img{
     margin-left: 33em;
 }
 
+#caixalogin input{
+    height: 3em;
+    width: 90%;
+}
+
 #caixalogin form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     shape-outside: #394e73 2px;
-    border-radius: 2em;
+    border-radius: 1.5em;
     background-color: var(--cordefundocaixa);
     margin-top: 3em;
-    width: 15em;
+    width: 20em;
     font-size: 1.5em;
-    margin-left: 2em;
 }
 
 #caixalogin h2{
@@ -87,6 +105,46 @@ header #logo img{
 }
 
 #caixalogin p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    margin-left: 5.5em;
+}
+
+
+
+#caixalogin2{
+    margin-left: 33em;
+}
+
+#caixalogin2 input{
+    height: 3em;
+    width: 90%;
+}
+
+#caixalogin2 form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    shape-outside: #394e73 2px;
+    border-radius: 1.5em;
+    background-color: var(--cordefundocaixa);
+    margin-top: 3em;
+    width: 20em;
+    font-size: 1.5em;
+}
+
+#caixalogin2 h2{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#caixalogin2 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1em;
     margin-left: 5.5em;
