@@ -26,27 +26,26 @@
                     <input type="email" name="email" id="email" placeholder="Digite seu E-mail"><br><br>
                     
                     <input type="password" name="senha" id="senha" maxlength="20" rows="1" placeholder="Crie uma senha de 8 digitos, no minímo"><br><br>
-                    <label for="dtnasc">Data de nascimento</label>
-                    <input type="date" name="dtnasc" id="dtnasc" ><br><br>
-                   
-                    <textarea id="textarea" name="textarea" maxlength="8" rows="1" placeholder="Digite seu CEP"></textarea><br><br>
-                    <label for="regiao">Região</label>
-                    <select name="regiao" id="regiao"><br>
-                        <option value="S">Sul</option>
-                        <option value="SU">Suldeste</option>
-                        <option value="CO">Centro-Oeste</option>
-                        <option value="NO">Nordeste</option>
-                        <option value="N">Norte</option>
-                    </select><br><br>
-                    <label for="genero">Gênero</label>
-                        <input type="radio" value="M" name="genero" id="genero" >Masculino 
-                        <input type="radio" value="F" name="genero" id="genero">Feminino 
-                        <input type="radio" value="O" name="genero" id="genero">Outro <br><br>
-                        
-                        <textarea id="textarea" name="textarea" maxlength="1000" rows="5" placeholder="Escreva aqui suas preferências de aroma"></textarea><br><br>
-                        <button type="submit"> Fazer Cadastro </button><br><br><br>
 
-                        <p>Já possui cadastro? <a href="index.html">Faça o login</a></p>
+                    <input type="password" name="senha" id="senha" maxlength="20" rows="1" placeholder="Confirme sua senha"><br><br>
+
+                <div id="preferencias">
+                    <p>Escolha suas preferências de aroma:</p>
+                    <input type="checkbox" id="aroma1" name="aroma1" value="citrico">
+                    <label for="aroma1"> Cítrico</label><br>
+                    <input type="checkbox" id="aroma2" name="aroma2" value="floral">
+                    <label for="aroma2"> Floral</label><br>
+                    <input type="checkbox" id="aroma3" name="aroma3" value="frutado">
+                    <label for="aroma3"> Frutado</label><br>
+                    <input type="checkbox" id="aroma4" name="aroma4" value="oriental">
+                    <label for="aroma4"> Oriental</label><br>
+                    <input type="checkbox" id="aroma5" name="aroma5" value="amadeirado">
+                    <label for="aroma5"> Amadeirado</label><br><br>
+                </div>
+                    
+                    <button type="submit"> Fazer Cadastro </button><br><br><br>
+
+                    <p>Já possui cadastro? <a href="index.html">Faça o login</a></p>
                 </form>
         </div>
         
